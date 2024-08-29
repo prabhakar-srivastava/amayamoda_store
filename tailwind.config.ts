@@ -15,6 +15,13 @@ const config: Config = {
           fontWeight: "700",
         },
       ],
+      "heading1-light": [
+        "50px",
+        {
+          lineHeight: "100%",
+          fontWeight: "100",
+        },
+      ],
       "heading2-bold": [
         "30px",
         {
@@ -22,11 +29,25 @@ const config: Config = {
           fontWeight: "700",
         },
       ],
+      "heading2-light": [
+        "30px",
+        {
+          lineHeight: "100%",
+          fontWeight: "100",
+        },
+      ],
       "heading3-bold": [
         "24px",
         {
           lineHeight: "100%",
           fontWeight: "700",
+        },
+      ],
+      "heading3-light": [
+        "24px",
+        {
+          lineHeight: "100%",
+          fontWeight: "100",
         },
       ],
       "heading4-bold": [
@@ -82,7 +103,28 @@ const config: Config = {
         "14px",
         {
           lineHeight: "140%",
+          fontWeight: "400",
+        },
+      ],
+      "small-light": [
+        "12px",
+        {
+          lineHeight: "140%",
+          fontWeight: "200",
+        },
+      ],
+      "extra-small-medium": [
+        "8px",
+        {
+          lineHeight: "140%",
           fontWeight: "500",
+        },
+      ],
+      "extra-small-light": [
+        "8px",
+        {
+          lineHeight: "140%",
+          fontWeight: "400",
         },
       ],
     },

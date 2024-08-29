@@ -5,8 +5,14 @@ const ProductList = async () => {
   const products = await getProducts();
 
   return (
-    <div className="flex flex-col items-center gap-10 py-8 px-5">
-      <p className="text-heading1-bold">Products</p>
+    <div className="my-6">
+      <div className="flex justify-between items-center">
+      <p className="text-heading1-bold font-serif font-thin">Products</p>
+      <p className="text-grey-2 cursor-pointer hover:underline transition-all duration-500">View All</p>
+      </div>
+      
+      <div className="flex flex-col items-start gap-10 py-8 ">
+      
       {!products || products.length === 0 ? (
         <p className="text-body-bold">No products found</p>
       ) : (
@@ -17,6 +23,8 @@ const ProductList = async () => {
         </div>
       )}
     </div>
+    </div>
+    
   );
 };
 

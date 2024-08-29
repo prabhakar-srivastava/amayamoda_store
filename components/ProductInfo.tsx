@@ -18,7 +18,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
   const cart = useCart();
 
   return (
-    <div className="max-w-[400px] flex flex-col gap-4">
+    <div className="w-[30rem] h-max flex flex-col gap-4 bg-white  shadow-lg px-7 py-5">
       <div className="flex justify-between items-center">
         <p className="text-heading3-bold">{productInfo.title}</p>
         <HeartFavorite product={productInfo} />
@@ -29,7 +29,11 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
         <p className="text-base-bold">{productInfo.category}</p>
       </div>
 
-      <p className="text-heading3-bold">$ {productInfo.price}</p>
+      <div className="flex gap-3 items-baseline mt-2">
+          <p className="text-heading2-bold"> &#8377;{productInfo.price}</p>
+          <p className="text-small-bold line-through "> &#8377;{productInfo.expense as any}</p>
+        </div>
+      {/* <p className="text-heading3-bold">$ {productInfo.price}</p> */}
 
       <div className="flex flex-col gap-2">
         <p className="text-base-medium text-grey-2">Description:</p>
